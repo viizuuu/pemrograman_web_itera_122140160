@@ -6,6 +6,38 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  background: blue;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  font-size: 24px;
+  border-radius: 0 0 16px 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+header p { /* Updated selector from #header to #heading */
+  font-weight: bolder;
+  margin: 0;
+  font-size: 18px;
+}
+
 body {
   background: #1e293b;
   color: #fff;
@@ -103,4 +135,33 @@ button:hover {
   padding: 0;
   font-size: 14px;
   white-space: nowrap;
+}
+
+.catatan-item {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  margin-bottom: 10px;
+  border-left: 4px solid blue;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.hapus-btn {
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 10px;
+  width: 80px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-left: 10px;
+  transition: background 0.3s ease;
+}
+
+.hapus-btn:hover {
+  background-color: darkred;
 }

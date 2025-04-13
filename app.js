@@ -19,12 +19,30 @@ class CatatanHarian {
     this.render();
   };
 
+  hapus = (index) => {
+    this.catatan.splice(index, 1);
+    localStorage.setItem("catatan", JSON.stringify(this.catatan));
+    this.render();
+  };
+
   render = () => {
     this.daftar.innerHTML = "";
+
     this.catatan.forEach((isi, i) => {
-      const p = document.createElement("p");
+      const itemWrapper = document.createElement("div");
+      itemWrapper.classList.add("catatan-item");
+
+      const p = document.createElement("span");
       p.textContent = `${i + 1}. ${isi}`;
-      this.daftar.appendChild(p);
+
+      const btnHapus = document.createElement("button");
+      btnHapus.textContent = "Hapus";
+      btnHapus.className = "hapus-btn";
+      btnHapus.addEventListener("click", () => this.hapus(i));
+
+      itemWrapper.appendChild(p);
+      itemWrapper.appendChild(btnHapus);
+      this.daftar.appendChild(itemWrapper);
     });
   };
 }
@@ -62,11 +80,10 @@ const tampilkanCuaca = async () => {
 document.addEventListener("DOMContentLoaded", () => {
   const catatanApp = new CatatanHarian("noteInput", "daftarCatatan");
 
-  document
-    .getElementById("btnSimpan")
+  document.getElementById("btnSimpan")
     .addEventListener("click", () => catatanApp.tambah());
 
-  document
-    .getElementById("btnCuaca")
+  document.getElementById("btnCuaca")
     .addEventListener("click", tampilkanCuaca);
 });
+
