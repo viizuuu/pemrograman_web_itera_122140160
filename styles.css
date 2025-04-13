@@ -1,0 +1,106 @@
+/* Reset dasar */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #1e293b;
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Container utama */
+.container {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 30px;
+  width: 100%;
+  max-width: 600px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Judul */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 26px;
+  color: white;
+}
+
+/* Input dan tombol */
+textarea,
+input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0 20px;
+  border: none;
+  border-radius: 8px;
+  background: white;
+  color: black;
+  font-size: 16px;
+  resize: none;
+}
+
+button {
+  background: blue;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  transition: all 0.3s ease;
+  margin-bottom: 20px;
+}
+
+button:hover {
+  background: #00bcd4;
+  transform: scale(1.03);
+}
+
+/* Daftar catatan dan hasil cuaca */
+#daftarCatatan p,
+#cuaca p {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  border-left: 4px solid blue;
+  margin-bottom: 10px;
+  border-radius: 6px;
+}
+
+/* Wrapper untuk input dan tombol jadi satu baris */
+.input-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+/* Biar input fleksibel dan tombol tetap pas */
+.input-group input[type="text"],
+.input-group textarea {
+  flex: 1;
+  margin: 0; /* Hilangin margin biar rapi */
+  height: 48px; /* Biar sejajar */
+  font-size: 16px;
+  padding: 12px;
+  color: #000; /* Karena background putih */
+}
+
+.input-group button {
+  width: 100px; /* Ukuran seragam */
+  height: 48px;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  white-space: nowrap;
+}
