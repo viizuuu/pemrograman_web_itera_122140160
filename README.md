@@ -1,4 +1,4 @@
-# 📓 Catatan Harian Orang Jambi
+# 📓 Dashboard Pribadi
 
 Aplikasi berbasis JavaScript modern untuk mencatat hal-hal penting dan memantau kondisi cuaca terkini berdasarkan kota yang kamu inputkan.
 
