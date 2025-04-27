@@ -2,11 +2,11 @@
 
 # Data mahasiswa (list berisi dictionary)
 mahasiswa = [
-    {"nama": "Ayu", "nim": "230001", "nilai_uts": 80, "nilai_uas": 85, "nilai_tugas": 78},
-    {"nama": "Budi", "nim": "230002", "nilai_uts": 75, "nilai_uas": 70, "nilai_tugas": 72},
-    {"nama": "Citra", "nim": "230003", "nilai_uts": 65, "nilai_uas": 60, "nilai_tugas": 70},
-    {"nama": "Dian", "nim": "230004", "nilai_uts": 55, "nilai_uas": 58, "nilai_tugas": 60},
-    {"nama": "Eko", "nim": "230005", "nilai_uts": 40, "nilai_uas": 45, "nilai_tugas": 50}
+    {"nama": "Naruto", "nim": "122140271", "nilai_uts": 80, "nilai_uas": 85, "nilai_tugas": 78},
+    {"nama": "Sasuke", "nim": "122140272", "nilai_uts": 75, "nilai_uas": 70, "nilai_tugas": 72},
+    {"nama": "Sakura", "nim": "122140273", "nilai_uts": 65, "nilai_uas": 60, "nilai_tugas": 70},
+    {"nama": "Hinata", "nim": "122140274", "nilai_uts": 55, "nilai_uas": 58, "nilai_tugas": 60},
+    {"nama": "Shikamaru", "nim": "122140275", "nilai_uts": 40, "nilai_uas": 45, "nilai_tugas": 50}
 ]
 
 # Menghitung nilai akhir dan grade
